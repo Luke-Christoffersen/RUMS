@@ -1,0 +1,35 @@
+#game-container {
+  position: relative; /* Make this the positioning context */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  padding: 20px;
+  border: 5px solid rgb(226, 68, 68);
+  border-top: 5px none;
+  border-right: none;
+  border-bottom: none;
+}
+
+#info-container {
+  position: absolute; /* Anchor to top-left of game-container */
+  top: 0;
+  left: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#times {
+  margin: 0;
+}
+
+#repeats-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#rounds {
+  width: 30px;
+}

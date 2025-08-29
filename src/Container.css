@@ -1,0 +1,162 @@
+#header{
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+    flex-direction: row;
+    border-bottom: 5px solid rgb(226, 68, 68);
+    width: 100%;
+}   
+
+#logo {
+    padding-right: 300px;
+    width: 300px;
+    height:170px;
+    margin-top: -45px;
+    margin-bottom: -40px;
+    padding-left: 250px;
+}
+
+#game-select {
+    padding-right: 30px;
+}
+
+#game-info{
+    border-bottom: 3px solid rgb(226, 68, 68);
+    height: 80%;
+    width: 100%;
+    align-items: left;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-name {
+    text-align: center;
+}
+
+.game-summary {
+    font-size: 1.6rem;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 120px;
+}
+
+#special-game-summary {
+    font-size: 1.39rem;
+    padding-top: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+}
+#footer{
+    border-top: 1px solid rgb(226, 68, 68);
+    width: 100%;
+    height: 20%;
+}
+
+#rounds-customizer {
+    border: 5px solid rgb(226, 68, 68);
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    gap: 3px;
+}
+
+#rounds-input {
+    width: 50px;
+    font-size: 1.65em;
+    cursor: pointer;
+    padding: 2px;
+    border: 2px solid rgb(226, 68, 68);
+    border-radius: 5px;
+    background-color:  rgb(36, 36, 36);
+    color: rgb(224, 225, 248);
+    font-family: 'Poppins', sans-serif;
+}
+
+#vertical-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#horizontal-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#arrow-keys {
+    padding-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+#arrow-keys .row {
+    display: flex;
+    gap: 3px
+
+}
+
+.key {
+    width: 100px;
+    height: 100px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid rgb(226, 68, 68);
+    border-radius: 10px;
+    background-color:  rgb(36, 36, 36);
+    color: rgb(224, 225, 248);
+    font-family: 'Poppins', sans-serif;
+}
+
+.key:hover {
+    background-color:  rgb(58, 58, 58);
+}
+
+.button {
+    background-color:  rgb(190, 190, 190);
+    padding: 8px;
+    cursor: pointer;
+    background-color:  rgb(36, 36, 36);
+    border-color: rgb(226, 68, 68);
+    color: rgb(224, 225, 248);
+    font-family: 'Poppins', sans-serif;
+}
+
+.button:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+#button-1 {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-right: unset;
+}
+
+#button-2 {
+    border-right: unset;
+}
+
+#button-3 {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#about-name {
+    padding-left: 10px;
+    margin-top: 8px;
+    margin-bottom: -6px;
+}
+
+#about-summary {
+    padding-left: 10px;
+}
