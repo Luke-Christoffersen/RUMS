@@ -84,10 +84,12 @@ export default function Easy({repeats = 5}) {
                     setReactionTime(reaction);
                     setAverage(a => [...a, reaction]);
                     didRecordRef.current = true;
+                    startTimeRef.current = null;
                 } else  if (startTimeRef.current) {
                     setReactionTime(1000);
                     setAverage(a => [...a, 1000]);
                     didRecordRef.current = true;
+                    startTimeRef.current = null;
                 }
         }
 
@@ -108,7 +110,6 @@ export default function Easy({repeats = 5}) {
         setArrowVisible(false);
         setPlayed(false);
         setPaused(false);
-        startTimeRef.current = null; 
         if (roundsLeft-1 > 0) {
                 setRoundsLeft(r => r-1);
                  if (!didRecordRef.current) {
@@ -117,12 +118,19 @@ export default function Easy({repeats = 5}) {
                 }
                 handleStart();
             } else {
+                if (!didRecordRef.current) {
+                    setReactionTime(1000);
+                    setAverage(a => [...a, 1000]);
+                }
                 setRoundsLeft(0);
             }
     }
 
     function startSequence() {
         setRoundsLeft(repeats);
+        setAverage([]);
+        setDisplayAverage(0);
+        setReactionTime(0);
         handleStart();
     }
     

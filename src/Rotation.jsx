@@ -153,12 +153,16 @@ export default function Rotation({repeats = 5}) {
             initialPressedRef.current = false;
             if (roundsLeft-1 > 0) {
                 setRoundsLeft(r => r-1);
-                 if (!didRecordRef.current) {
+                if (!didRecordRef.current) {
                     setReactionTime(1500);
                     setAverage(a => [...a, 1500]);
                 }
                 handleStart();
             } else {
+                if (!didRecordRef.current) {
+                    setReactionTime(1500);
+                    setAverage(a => [...a, 1500]);
+                }
                 setRoundsLeft(0);
             }
         }, 750);

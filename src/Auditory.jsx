@@ -114,6 +114,9 @@ export default function Auditory({repeats = 5}) {
 
     function startSequence() {
         roundsLeftRef.current = repeats;
+        setAverage([]);
+        setDisplayAverage(0);
+        setReactionTime(0);
         handleStart();
     }
 
