@@ -9,8 +9,9 @@
 
 #logo {
     padding-right: 300px;
-    width: 300px;
-    height:170px;
+    width: auto;        
+    max-height: 150px;   
+    height: auto; 
     margin-top: -45px;
     margin-bottom: -40px;
     padding-left: 250px;
