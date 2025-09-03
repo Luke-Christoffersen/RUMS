@@ -100,8 +100,6 @@ export default function Rotation({repeats = 5}) {
                 break;
         }
 
-
-            console.log(`Expected ${listenerRef1.current}/${baseRotation} to ${endListener1.current}/${targetRotation} with rotation ${randMult}`);
             setTimeout(() => {
                 setPaused(false);
                 setArrowVisible(true);
