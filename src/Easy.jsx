@@ -25,7 +25,7 @@ export default function Easy({repeats = 5}) {
     const listenerRef2 = useRef(null);
     const didRecordRef = useRef(false);
     
-    let size = window.innerWidth > window.innerHeight ? window.innerHeight-145 : window.innerWidth-145;
+    let size = window.innerWidth > window.innerHeight ? window.innerHeight-138 : window.innerWidth-138;
 
     function handleStart() {
     setPlayed(true);
