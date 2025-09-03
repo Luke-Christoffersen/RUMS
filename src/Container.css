@@ -83,12 +83,11 @@
 #left-container{
     flex: 3;   
     max-width: 55%; 
-    
 }
 
 #game-holder{
     flex: 2;   
-    max-width: 45%;
+    max-width: 50%;
 
 }
 
